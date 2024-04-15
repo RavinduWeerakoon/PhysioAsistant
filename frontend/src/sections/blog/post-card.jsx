@@ -20,9 +20,12 @@ import SvgColor from 'src/components/svg-color';
 export default function PostCard({ post, index }) {
   const { cover, title, view, comment, share, author, createdAt } = post;
 
-  const latestPostLarge = index === 0;
+  // const latestPostLarge = index === 0;
 
-  const latestPost = index === 1 || index === 2;
+  // const latestPost = index === 1 || index === 2;
+
+  const latestPostLarge = false;
+  const latestPost = false;
 
   const renderAvatar = (
     <Avatar
@@ -51,6 +54,7 @@ export default function PostCard({ post, index }) {
       color="inherit"
       variant="subtitle2"
       underline="hover"
+      href="start"
       sx={{
         height: 44,
         overflow: 'hidden',
@@ -191,11 +195,11 @@ export default function PostCard({ post, index }) {
             }),
           }}
         >
-          {renderDate}
+         {/* {renderDate} */}
 
           {renderTitle}
 
-          {renderInfo}
+          {/* {renderInfo}  */}
         </Box>
       </Card>
     </Grid>
